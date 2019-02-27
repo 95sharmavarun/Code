@@ -1,0 +1,77 @@
+body{
+    background-image: url("/images/bg.jpg");
+    color:white;
+}
+
+H1{
+color:whitesmoke;
+}
+input:focus {
+    background-color: lightgoldenrodyellow;
+  }
+.registerForm{
+
+    width:40%;
+    text-align: center;
+    border-radius: 25px;
+    border:2px solid beige;
+}
+hr{
+    color:white;
+    height: 1px;
+}
+input[type="text"],input[type="email"],input[type="password"],input[type="number"],input[type="list"],datalist
+{
+    width: 50%;
+    padding:12px;
+    margin:5px;
+    border-radius: 25px;
+    
+}
+input[type="radio"],input[type="checkbox"]
+{
+    border: 0px;
+    width: 5%;
+    height: 1.5em;
+}
+span{
+    padding:12px;
+    margin-top:50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form,.registerForm{
+    margin:0 auto;
+
+}
+i{
+    font-size: 30px;
+    color:white;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+button{
+    background-color:deepskyblue; /* Green */
+  border: 2px solid white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 26px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+#fb:hover{
+color:deepskyblue;
+}
+#gp:hover{
+    color:red;
+}

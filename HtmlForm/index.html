@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="">
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
+   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+</head>
+<body>
+<div class="form">
+
+    <form class="registerForm">
+        <h1><i class="fas fa-users"></i> Sign Up</h1><hr>
+<span>Enter your First and Last Name</span><br>
+<i class="fas fa-user"></i>
+<input type="text" placeholder="enter your first and last name" name="fname" value="" required><br>
+
+<span>Enter your email</span><br>
+<i class="fas fa-envelope"></i>
+<input type="email" placeholder="enter your email" name="email" value="" required><br>
+<span>Enter your password</span><br>
+<i class="fas fa-lock"></i>
+<input type="password" placeholder="enter your password" name="pass" id="pass" value="" required><br>
+<span>Re-Enter your password</span><br>
+<i class="fas fa-lock"></i>
+<input type="password" placeholder="re-enter your password" name="repass" id="repass" value="" required><br>
+<span>Enter your Phone Number</span><br>
+<i class="fas fa-mobile-alt"></i>
+<input type="number" placeholder="enter your phone number" name="num" value="" required><br>
+<br>
+<span>Gender</span>
+<input type="radio" name="gender" value="male" checked><i class="fas fa-male"></i><span>Male</span>
+<input type="radio" name="gender" value="female"> <i class="fas fa-female"></i><span>Female</span>
+<input type="radio" name="gender" value="other"><i class="fas fa-transgender-alt"></i><span>Other</span> 
+<br>
+<br>
+<span>Languages</span><i class="fas fa-language"></i>
+<input type="checkbox" name="gender" value="hindi" checked><span>Hindi</span>
+<input type="checkbox" name="gender" value="english"><span>English</span>
+<input type="checkbox" name="gender" value="other"><span>Other</span> 
+<br>
+<br>
+<span>Select your Country</span><i class="fas fa-globe-americas"></i>
+<input list="country" name="country">
+<datalist id="country">
+        <option value="INDIA">
+        <option value="USA">
+        <option value="CHINA">
+        <option value="JAPAN">
+        <option value="Other">
+      </datalist>
+      <br><br>
+      <input type="checkbox" name="terms" value="terms" required><span>By joining us, you agree to our <b><b>Terms of Services</b> </b> and <b><b>Privacy Policy</b></b></span>
+
+
+
+
+<br>
+<button type="submit" value="submit" onclick="check();">Submit</button> <button type="reset" value="submit">Reset</button>
+<br><br>
+<span><a href=""><i class="fab fa-facebook-square" id="fb"></i></a> Join with Facebook or Google+</span><a href=""><i class="fab fa-google-plus-g" id="gp"></i></a>
+
+
+    </form>
+</div>
+</body>
+
+<script>
+function check()
+{
+console.log("hi");
+var str1=document.getElementById("pass").value;
+var str2=document.getElementById("repass").value;
+var n = str1.localeCompare(str2);
+if(n==0){
+console.log("confirm");
+}
+else{
+  alert("Please Confirm your Password");
+}
+}
+</script>
+
+
+</html>
