@@ -1,4 +1,4 @@
-<!Doctype <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -7,33 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
 <style>
 h1{
   text-align: center;
 }
-
 body{
     background-color:aquamarine;
 }
 .internal-body{
     width:70%;
     margin:0 auto;
-   /* text-align:center;*/
-}
+   
 
+}
 .internal-head{
 border:1px solid aqua;
 width:70%;
 margin:0 auto;
-border-radius: 20px;
+border-radius: 11px;
 background-color: teal;
 }
-
 .internal-content{
 background-color: white !important;
-/*text-align: center;*/
-
+height: 60em;
+border-radius: 9px;
+border: 2px solid teal;
 }
 img{
     width:70%;
@@ -43,59 +42,88 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
-
 .img-cont{
     text-align: center;
 }
 .pg-cont{
     margin-left:8em;
 }
-
 li{
 text-decoration: none;
 display:inline-block;
 padding-left:40px;
 padding-right: 40px;
-/*margin-left:7em;*/
 text-align: center;
-border: 1px solid black;
-background-color: orange;
-border-radius: 15px;
+border: 1px solid rgb(255, 145, 0);
+background-color: rgb(255, 145, 0);
+border-radius: 5px;
 margin-top:20px;
-
-
+height:26px;
 }
 .list{
     margin:0 auto;
     text-align: center;
 }
-
-
 .leftfoot
 {
-    margin-left:7em;
-   
+    display:block;
+    float: left;
+    margin-left: 20%;
 }
 a{
     color:orangered;
 }
 .rightfoot
-{/*
-   margin-right:7em;
-   margin-bottom:17em;
-   position: absolute;
-
-    margin-bottom:10em;
-   float:right;*/
+{
+    display:block;
+    float: right;
+    margin-right: 20%;
 }
-
-h3{
+h3,h2{
     color: aqua;
 }
 #foot{
     text-align: center;
-    color:white;
+    color:teal;
 }
+.logo{
+    width: 7%;
+    height: 79px;
+    padding-right: 5px;
+    
+}
+span{
+    margin-top: 43px;
+    position: absolute;
+    margin-right: 5em;
+    text-align: center;
+    color:white;
+    font-family: 'Cinzel Decorative', cursive;
+  
+}
+
+
+
+
+
+.arrow-up {
+    width: 0px;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgb(255, 145, 0);
+    color: rgb(255, 145, 0);
+    margin-top: -19px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imghead
+{
+    margin-right: 368px;
+}
+
+
 </style>
 
 
@@ -106,17 +134,17 @@ h3{
 <body>
   
     <div class="body">
-
-        <h1>Oceanic Airlines</h1>
-
+<div class="imghead">
+        <h1><img class="logo" src="https://pbs.twimg.com/profile_images/378800000857549335/UeDNbsx-.png"><span><b>Oceanic Airlines</b></span></h1>
+    </div>
         <div class="internal-head">
           <div class="list">
             <ul>
-                <li>home</li>
-                <li>Upcoming Flights</li>
-                <li>About Us</li>
-                <li>Travel Guide</li>
-                <li>Contact US</li>
+                <li><div class="arrow-up"></div>home</li>
+                <li><div class="arrow-up"></div>Upcoming Flights</li>
+                <li><div class="arrow-up"></div>About Us</li>
+                <li><div class="arrow-up"></div>Travel Guide</li>
+                <li><div class="arrow-up"></div>Contact US</li>
             </ul>
         </div>
         </div>
@@ -129,7 +157,7 @@ h3{
  <br>
  <div class="pg-cont">
 <h2>Welcome</h2>
-<p>Looking to loose yourself? Take a trip with oceanic airlines!</p>
+<p>Looking to loose yourself ? Take a trip with oceanic airlines!</p>
 <p>Experience the fun and adventure of a destination unlike any other. Regardless of what you have in mind,</p>
 <p>we promise you na trip you'll never forget.Enjoy all with (at least) two extra nights free!</p>
 </div>
@@ -158,12 +186,6 @@ h3{
         
 
     </div>
-
-
-
-
-
-
 
 
 </body>
